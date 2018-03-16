@@ -1,0 +1,501 @@
+/********************
+    extra class
+*********************/
+
+.text-shadow-black{
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+}
+
+.btn-normal{
+    margin: 3.5vh 0 15vh 0;
+    padding: 1vw 5vw;
+    border-radius: 2.7vw;
+    color: white;
+    font-size: 1.3vw;
+}
+
+.btn-bg-blue-to-white{
+    background: linear-gradient( 0deg, rgb(15,75,143), rgb(255,255,255));
+}
+
+.btn-border-6-s-silver{
+    border: 6px solid silver;
+}
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+/***********************
+    class background
+************************/
+
+.backgorund-img img{
+    width: 100%;
+    max-height: 1800px;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/********************
+    class video
+*********************/
+
+.sample-video{
+    padding-top: 2.5vw;
+}
+
+.video-box{
+    border: 10px solid rgb(139,186,221);
+}
+
+.video-box:nth-child(0){
+    display: none;
+}
+
+.content-header img{
+    width: 60vw;
+    height: auto;
+    margin-bottom: 15vw;
+}
+
+/***************************
+    class content-box
+****************************/
+
+.content-box:nth-child(odd){
+    margin: 5vh 0;
+    padding: 5%;
+    background: linear-gradient( 0deg, rgb(15,75,143), rgb(24,117,208));
+}
+
+.content-box:nth-child(odd) h1{
+    color: rgb(230,217,133);
+    font-size: 95px;
+    line-height: 95px;
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.content-box:nth-child(odd) ul,
+.content-box:nth-child(odd) p{
+    color: white;
+    font-size: 38.5px;
+    line-height: 38.5px;
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.content-box:nth-child(even){
+    margin: 5vh 0;
+    padding: 5%;
+}
+
+.content-box:nth-child(even) h1{
+    color: rgb(15,73,139);
+    font-size: 95px;
+    line-height: 95px;
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.content-box:nth-child(even) ul,
+.content-box:nth-child(even) p{
+    color: rgb(15,73,139);
+    font-size: 38.5px;
+    line-height: 38.5px;
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.content-box:nth-child(even) ul,
+.content-box:nth-child(odd) ul{
+    padding-left: 3.5vw;
+}
+
+.content-box h1{
+    text-transform: uppercase;
+}
+
+/********************
+    class banner
+*********************/
+
+.banner{
+    margin-bottom: 10vh;
+}
+
+@media only screen and (min-width: 1332px) {
+    .content-header img {
+        width: 90%;
+    }
+}
+
+/*
+    Extra large screen
+    for tablet, small screen laptop, laptop and PC
+*/
+@media only screen and (max-width: 1200px) {
+    .backgorund-img img{
+        height: 1400px;
+    }
+
+    .content-header img {
+        width: 50vw;
+    }
+
+    .content-box:nth-child(even) h1,
+    .content-box:nth-child(odd) h1{
+        font-size: 6.1vw;
+        line-height: 6.1vw;
+        margin-bottom: 2.2vw;
+    }
+
+    .content-box:nth-child(even) ul,
+    .content-box:nth-child(even) p,
+    .content-box:nth-child(odd) ul,
+    .content-box:nth-child(odd) p{
+        font-size: 2.8vw;
+        line-height: 2.8vw;
+        margin-bottom: 0.5vw;
+    }
+}
+
+/*
+    large screen
+    for small tablet, tablet, screen width mobile and small screen laptop
+*/
+@media only screen and (max-width: 992px) {
+    .video-box{
+        border: 5px solid rgb(139,186,221);
+    }
+
+    .content-header img{
+        width: 52vw;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 9vw;
+    }
+
+    .backgorund-img img{
+        height: 1050px;
+    }
+}
+
+/*
+    Medium screen
+    for mobile, small tablet andscreen width mobile
+*/
+@media only screen and (width: 768px) {
+    .content-header img {
+        width: 43vw;
+        margin-bottom: 9vw;
+    }
+
+    .backgorund-img img{
+        height: 120vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .video{
+        padding-top: 0;
+    }
+
+    .btn-border-6-s-silver{
+        border: 3px solid silver;
+    }
+
+    .backgorund-img img{
+        height: 120vw;
+    }
+
+    .content-header img{
+        width: 59vw;
+        margin-bottom: 9vw;
+    }
+}
+
+/* animation */
+.animation-element{
+    transition: all;
+    transition-duration: 1s;
+    opacity: 0;
+}
+
+.animetion-fade-out{
+    opacity: 0;
+}
+
+.animetion-fade-in{
+    opacity: 1;
+}
+
+/* font */
+@font-face {
+    font-family: 'Db helvethaicamon x';
+    src: url('../fonts/db-helvethaicamon-x.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x v3';
+    src: url('../fonts/DB-Helvethaica-X-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x ulli v3';
+    src: url('../fonts/DB-Helvethaica-X-UlLi-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x ulli cond v3';
+    src: url('../fonts/DB-Helvethaica-X-UlLi-Cond-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x v3';
+    src: url('../fonts/DB-Helvethaica-X-Thin-v3.2.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x ulli ext it v3';
+    src: url('../fonts/DB-Helvethaica-X-UlLi-Ext-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x ulli ext v3';
+    src: url('../fonts/DB-Helvethaica-X-UlLi-Ext-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x ulli it v3';
+    src: url('../fonts/DB-Helvethaica-X-UlLi-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x ext v3';
+    src: url('../fonts/DB-Helvethaica-X-Thin-Ext-v3.2.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x it v3';
+    src: url('../fonts/DB-Helvethaica-X-Thin-It-v3.2.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x ulli cond it v3';
+    src: url('../fonts/DB-Helvethaica-X-UlLi-Cond-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x ext it v3';
+    src: url('../fonts/DB-Helvethaica-X-Thin-Ext-It-v3.2.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x cond it v3';
+    src: url('../fonts/DB-Helvethaica-X-Thin-Cond-It-v3.2.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x med ext v3';
+    src: url('../fonts/DB-Helvethaica-X-Med-Ext-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x cond v3';
+    src: url('../fonts/DB-Helvethaica-X-Thin-Cond-v3.2.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x med ext it v3';
+    src: url('../fonts/DB-Helvethaica-X-Med-Ext-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x med v3';
+    src: url('../fonts/DB-Helvethaica-X-Med-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x med it v3';
+    src: url('../fonts/DB-Helvethaica-X-Med-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x med cond it v3';
+    src: url('../fonts/DB-Helvethaica-X-Med-Cond-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x li cond v3';
+    src: url('../fonts/DB-Helvethaica-X-Li-Cond-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x li it v3';
+    src: url('../fonts/DB-Helvethaica-X-Li-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x li ext v3';
+    src: url('../fonts/DB-Helvethaica-X-Li-Ext-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x med cond v3';
+    src: url('../fonts/DB-Helvethaica-X-Med-Cond-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x li v3';
+    src: url('../fonts/DB-Helvethaica-X-Li-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x li ext it v3';
+    src: url('../fonts/DB-Helvethaica-X-Li-Ext-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x li cond it v3';
+    src: url('../fonts/DB-Helvethaica-X-Li-Cond-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x ext it v3';
+    src: url('../fonts/DB-Helvethaica-X-Ext-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x ext v3';
+    src: url('../fonts/DB-Helvethaica-X-Ext-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x it v3';
+    src: url('../fonts/DB-Helvethaica-X-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x blk v3';
+    src: url('../fonts/DB-Helvethaica-X-Blk-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x cond it v3';
+    src: url('../fonts/DB-Helvethaica-X-Cond-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x blk it v3';
+    src: url('../fonts/DB-Helvethaica-X-Blk-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x blk ext it v3';
+    src: url('../fonts/DB-Helvethaica-X-Blk-Ext-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x blk cond v3';
+    src: url('../fonts/DB-Helvethaica-X-Blk-Cond-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x cond v3';
+    src: url('../fonts/DB-Helvethaica-X-Cond-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x blk ext v3';
+    src: url('../fonts/DB-Helvethaica-X-Blk-Ext-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x blk cond it v3';
+    src: url('../fonts/DB-Helvethaica-X-Blk-Cond-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x bd it v3';
+    src: url('../fonts/DB-Helvethaica-X-Bd-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x bd ext it v3';
+    src: url('../fonts/DB-Helvethaica-X-Bd-Ext-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x bd v3';
+    src: url('../fonts/DB-Helvethaica-X-Bd-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x bd ext v3';
+    src: url('../fonts/DB-Helvethaica-X-Bd-Ext-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x bd cond v3';
+    src: url('../fonts/DB-Helvethaica-X-Bd-Cond-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Db helvethaica x bd cond it v3';
+    src: url('../fonts/DB-Helvethaica-X-Bd-Cond-It-v3.2.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
