@@ -15,10 +15,11 @@
 
     <!-- jquery -->
     <script type="text/javascript" src="./assets/plugin/jquery/jQuery-2.1.4.min.js"></script>
-    <title>Microsite</title>
 
     <!-- font awesome-->
     <link rel="stylesheet" href="./assets/plugin/font-awesome/css/font-awesome.css">
+
+    <title>Microsite</title>
 </head>
 <body>
 <!-- background -->
@@ -31,7 +32,7 @@
 
     <!-- header-text -->
     <div class="row">
-        <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-6 col-xs-offset-3">
+        <div class="col-md-8 col-md-offset-2">
             <div class="content-header text-center landing-header">
                 <img src="./assets/img/text1.png">
             </div>
@@ -126,15 +127,24 @@
 <!-- carousel -->
 <div class="container">
     <div class="content-box-slides-view-landing animation-element">
-        <div class="content-box-slide">
+        <!-- first slide element -->
+        <div class="content-box-slide first-slide-element">
             <div class="content-box-slide-header">
-                <h1 class="text-center">header</h1>
+                <h1 class="text-center">
+                    header
+                    <div class="next-btn-left visible-xs">
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                    <div class="prev-btn-right visible-xs">
+                        <i class="fa fa-arrow-left"></i>
+                    </div>
+                </h1>
             </div>
             <div class="content-box-slide-img">
-                <div class="content-box-slide-text-over-img">
-                    <input type="button" value="click me">
+                <div class="content-box-slide-btn-over-img">
+                    <input type="submit" value="click me">
                 </div>
-                <img src="./assets/brand/banner.png">
+                <img src="./assets/brand/banner.png" >
             </div>
             <div class="content-box-slide-body">
                 <p>In the “Writing with Purpose” section of the Pattern Based Writing: Quick &
@@ -142,20 +152,29 @@
                     strategies to different types (or modes) of writing.</p>
             </div>
         </div>
-        <div class="content-box-slide">
+
+        <!-- second slide element -->
+        <div class="content-box-slide second-slide-element">
             <div class="content-box-slide-header">
-                <h1 class="text-center">header</h1>
+                <h1 class="text-center">
+                    header2
+                    <div class="next-btn-left visible-xs">
+                        <i class="fa fa-arrow-right"></i>
+                    </div>
+                    <div class="prev-btn-right visible-xs">
+                        <i class="fa fa-arrow-left"></i>
+                    </div>
+                </h1>
             </div>
             <div class="content-box-slide-img">
                 <img src="./assets/brand/banner.png">
-                <div class="content-box-slide-text-over-img text-center">
-                    <input type="button" value="click me">
+                <div class="content-box-slide-btn-over-img text-center">
+                    <input type="submit" value="click me">
                 </div>
             </div>
             <div class="content-box-slide-body">
                 <p>In the “Writing with Purpose” section of the Pattern Based Writing: Quick &
-                    Easy Essay program, students learn to apply their new writing
-                    strategies to different types (or modes) of writing.</p>
+                    Easy Essay program, studwriting.</p>
             </div>
         </div>
     </div>
@@ -163,5 +182,6 @@
 
 <!-- javascript JS -->
 <script type="text/javascript" src="./assets/js/srcoll-controller.js"></script>
+<script type="text/javascript" src="./assets/js/slide-controller.js"></script>
 </body>
 </html>

@@ -290,6 +290,7 @@
 
 .content-box-slide-header{
     padding-top: 0.5vw;
+    position: relative;
 }
 
 .content-box-slide-header h1{
@@ -302,10 +303,6 @@
 
 .content-box-slide-img img{
     width: 100%;
-}
-
-.content-box-slide-img input[type="button"]{
-
 }
 
 .content-box-slide-body{
@@ -326,14 +323,44 @@
     position: relative;
 }
 
-.content-box-slide-text-over-img{
+.content-box-slide-btn-over-img{
     position: absolute;
     bottom: -7.8%;
     left: 50%;
     margin-left: -15%;
 }
 
-.content-box-slide-text-over-img input[type="button"]{
+.next-btn-left{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 0 4vw;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.prev-btn-right{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 0 3vw;
+    height: 100%;
+    z-index: 1;
+}
+
+.next-btn-left i,.prev-btn-right i{
+    padding-top:  1.5vw;
+    cursor: pointer;
+    font-size: 2.5vw;
+    transition: all .5s;
+}
+
+.content-box-slide-btn-over-img input[type="submit"]{
     background: linear-gradient( 45deg, rgb(199,176,084), rgb(230,217,133));
     color: white;
     font-family: 'Db helvethaica x med cond v3', sans-serif;
@@ -379,7 +406,7 @@
         margin-bottom: 2.2vw;
     }
 
-    .content-box-slide-text-over-img input[type="button"],
+    .content-box-slide-btn-over-img input[type="submit"],
     .content-box-slide-header h1,
     .content-box-slide-body p,
     .masonry-content-box p,
@@ -391,6 +418,10 @@
         font-size: 2.8vw;
         line-height: 2.8vw;
         margin-bottom: 0.5vw;
+    }
+
+    .content-box-slide-btn-over-img{
+        bottom: -9.2%;
     }
 }
 
@@ -503,11 +534,17 @@
         border-radius: 0;
     }
 
-    .content-box-slide-text-over-img{
+    .content-box-slide-btn-over-img{
         bottom: -5%;
         left: 50%;
         margin-left: -5%;
     }
+
+    .content-box-slide-header h1{
+        margin-bottom: 0;
+        padding-bottom: 0.5vw;
+    }
+
 }
 
 /* animation */
@@ -523,6 +560,32 @@
 
 .animation-fade-in{
     opacity: 1;
+}
+
+.animation-slide-x-out{
+    animation: animation-slide-x-out .5s;
+}
+
+.animation-slide-x-in{
+    animation: animation-slide-x-in .5s;
+}
+
+@keyframes animation-slide-x-out{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes animation-slide-x-in{
+    from{
+        transform: translateX(100vw);
+    }
+    to{
+        transform: translateX(0px);
+    }
 }
 
 @keyframes arrow {
