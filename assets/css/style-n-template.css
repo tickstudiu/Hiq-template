@@ -147,11 +147,12 @@
 *****************************/
 
 .content-header img{
-    width: 60vw;
+    width: 80%;
     height: auto;
 }
 
 .landing-header img{
+    width: 100%;
     margin: 0;
 }
 
