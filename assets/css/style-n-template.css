@@ -365,6 +365,14 @@
     color: white;
 }
 
+.carousel-caption{
+    left: 0;
+    bottom: 0;
+    padding: 0 0;
+    width: 100%;
+    background: rgb(15,73,139);
+}
+
 /*
     Extra large screen
     for tablet, small screen laptop, laptop and PC
