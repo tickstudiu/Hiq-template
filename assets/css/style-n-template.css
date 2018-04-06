@@ -27,6 +27,80 @@
     height: auto;
 }
 
+.visible{
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+.text-white{
+    color: white;
+}
+
+.p-3{
+    padding: 1.5rem;
+}
+
+.mt-1{
+    margin-top: 0.5rem;
+}
+
+.mt-3{
+    margin-top: 1.5rem;
+}
+
+.mb-1{
+    margin-bottom: 0.5rem;
+}
+
+.mb-2{
+    margin-bottom: 1rem;
+}
+
+.mb-3{
+    margin-bottom: 1.5rem;
+}
+
+.rounded {
+    border-radius: 0.25rem !important;
+}
+
+.rounded-top {
+    border-top-left-radius: 0.75rem !important;
+    border-top-right-radius: 0.75rem !important;
+}
+
+.rounded-right {
+    border-top-right-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+}
+
+.rounded-bottom {
+    border-bottom-right-radius: 0.75rem !important;
+    border-bottom-left-radius: 0.75rem !important;
+}
+
+.rounded-left {
+    border-top-left-radius: 0.75rem !important;
+    border-bottom-left-radius: 0.75rem !important;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.rounded-0 {
+    border-radius: 0 !important;
+}
+
+.lead{
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 500;
+}
 /***********************
     class background
 ************************/
@@ -39,12 +113,18 @@
 }
 
 
+.bg-hiq{
+    background-image: -webkit-linear-gradient(0deg, #9b6d02, #d0b923 75%);
+    background-image: linear-gradient(90deg, #9b6d02, #d0b923 75%);
+}
+
 /********************
     class video
 *********************/
 
 .sample-video{
     padding-top: 2.5vw;
+    margin-bottom: 15vw;
 }
 
 .video-box{
@@ -55,15 +135,21 @@
     display: none;
 }
 
-.content-header img{
-    width: 60vw;
-    height: auto;
-    margin-bottom: 15vw;
-}
 
 /***************************
     class content-box
 ****************************/
+
+.content-btn{
+    background: none;
+    color: darkblue;
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-size: 35px;
+    line-height: 35px;
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    padding: 0.1vw 2vw;
+}
 
 .content-box:nth-child(odd){
     margin: 5vh 0;
@@ -139,10 +225,250 @@
     }
 }
 
+/****************************
+    class content header
+*****************************/
+
+.content-header img{
+    width: 80%;
+    height: auto;
+}
+
+.landing-header img{
+    width: 100%;
+    margin: 0;
+}
+
+/****************************
+    class scroll button
+ ****************************/
+
+.scroll-btn-box{
+    margin: 2.1vw 0;
+}
+
+.scroll-btn-box p{
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-weight: 500;
+    color: rgb(230,217,133);
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.scroll-btn i{
+    background-color: rgb(230,217,133);
+    margin: 1vw 0;
+    padding: 5px 13px;
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+    border-radius: 19px;
+    cursor: pointer;
+}
+
+.scroll-btn i:hover{
+    animation-name: arrow;
+    animation-duration: 1.25s;
+}
+
+/****************************
+    class jumbotron
+ ****************************/
+
+.jumbotron-landing h1{
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-size: 95px;
+    line-height: 95px;
+    color: rgb(15,73,139);
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.jumbotron-highlight{
+    background: linear-gradient( 45deg, rgb(199,176,084), rgb(230,217,133));
+    margin-bottom: 30px;
+}
+
+.jumbotron-highlight h1{
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-size: 95px;
+    line-height: 95px;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+}
+
+.jumbotron-landing p{
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-size: 35px;
+    line-height: 35px;
+    color: rgb(15,73,139);
+    font-weight: 500;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+/*********************************
+    class main content landing
+ *********************************/
+
+.content-box-landing {
+    display: inline-block;
+    background-color: rgb(15,73,139);
+    border-radius: 15px;
+    margin-top: 2vw;
+}
+
+.box-landing-img{
+    margin-top: 3vw;
+}
+
+.box-landing-img img{
+    width: 100%;
+    height: auto;
+}
+
+.content-box-landing a{
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.content-box-landing a:focus{
+    color: white;
+}
+
+.content-box-landing{
+    width: 100%;
+}
+
+.content-box-landing p{
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    padding: 6vw 2vw;
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.content-box-landing span{
+    color: rgb(230,217,133);
+}
+
+/**********************
+    class carousel
+ **********************/
+
+.content-box-slides-view-landing{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1vw;
+    padding: 0;
+}
+
+.content-box-slide{
+    background-color: rgb(15,73,139);
+    margin-top: 2vw;
+}
+
+.content-box-slide:nth-child(1){
+    border-top-right-radius: 15px;
+}
+
+.content-box-slide:nth-child(2){
+    border-top-left-radius: 15px;
+}
+
+.content-box-slide-header{
+    padding-top: 0.5vw;
+    position: relative;
+}
+
+.content-box-slide-header h1{
+    color: white;
+    font-size: 42px;
+    line-height: 42px;
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-weight: 500;
+}
+
+.content-box-slide-img img{
+    width: 100%;
+}
+
+.content-box-slide-body{
+    margin-top: 0.5vw;
+    margin-bottom: 2vw;
+}
+
+.content-box-slide-body p{
+    padding: 2vw 4vw 0 4vw;
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-size: 35px;
+    line-height: 35px;
+    color: white;
+    font-weight: 500;
+}
+
+.content-box-slide-img{
+    position: relative;
+}
+
+.content-box-slide-btn-over-img{
+    position: absolute;
+    bottom: -7.8%;
+    left: 50%;
+    margin-left: -15%;
+}
+
+.content-box-slide-btn-over-img input[type="submit"]{
+    background: linear-gradient( 45deg, #996c02, #cbb422);
+    color: white;
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-size: 35px;
+    line-height: 35px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 0.1vw 3vw;
+    transition: color .3s,box-shadow .3s,text-decoration .3s;
+}
+
+.content-box-slide-btn-over-img input[type="submit"]:hover{
+    background: #996c02;
+    color: #1b6d85;
+    box-shadow: 0 0 15px white;
+    text-decoration: underline;
+}
+
+/*****************************
+    bootstrap 3 Carousel
+*****************************/
+
+.carousel {
+    margin-top: 3vw;
+}
+
+.carousel-inner{
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    color: white;
+}
+
+.carousel-caption{
+    left: 0;
+    bottom: 0;
+    padding: 0 0;
+    width: 100%;
+    background: rgba(15,73,139,0.4);
+}
+
 /*
     Extra large screen
     for tablet, small screen laptop, laptop and PC
 */
+
 @media only screen and (max-width: 1200px) {
     .backgorund-img img{
         height: 1400px;
@@ -152,6 +478,20 @@
         width: 50vw;
     }
 
+    .jumbotron-landing h1{
+        font-size: 6.6vw;
+        line-height: 6.6vw;
+        margin-bottom: 2.2vw;
+    }
+    .jumbotron-highlight h1{
+        font-size: 6.6vw;
+        line-height: 6.6vw;
+    }
+
+    .jumbotron-highlight{
+        margin-bottom: 3.7vw;
+    }
+
     .content-box:nth-child(even) h1,
     .content-box:nth-child(odd) h1{
         font-size: 6.1vw;
@@ -159,13 +499,29 @@
         margin-bottom: 2.2vw;
     }
 
+    .lead{
+        font-size: 4.25vw;
+        line-height: 4.25vw;
+    }
+
+    .carousel-inner,
+    .content-btn,
+    .content-box-slide-btn-over-img input[type="submit"],
+    .content-box-slide-header h1,
+    .content-box-slide-body p,
+    .content-box-landing p,
+    .jumbotron-landing p,
     .content-box:nth-child(even) ul,
     .content-box:nth-child(even) p,
     .content-box:nth-child(odd) ul,
     .content-box:nth-child(odd) p{
-        font-size: 2.8vw;
-        line-height: 2.8vw;
+        font-size: 4.25vw;
+        line-height: 4.25vw;
         margin-bottom: 0.5vw;
+    }
+
+    .content-box-slide-btn-over-img{
+        bottom: -9.2%;
     }
 }
 
@@ -178,16 +534,32 @@
         border: 5px solid rgb(139,186,221);
     }
 
+    .sample-video{
+        margin-bottom: 9vw;
+    }
+
     .content-header img{
         width: 52vw;
         height: auto;
         margin-top: 0;
-        margin-bottom: 9vw;
     }
 
     .backgorund-img img{
         height: 1050px;
     }
+
+    .scroll-btn-box p{
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+
+    .scroll-btn i{
+        padding: 1vw 1.5vw;
+        font-size: 3vw;
+        line-height: 3vw;
+        border-radius: 2.1vw;
+    }
+
 }
 
 /*
@@ -195,9 +567,12 @@
     for mobile, small tablet andscreen width mobile
 */
 @media only screen and (width: 768px) {
+    .sample-video{
+        margin-bottom: 9vw;
+    }
+
     .content-header img {
         width: 43vw;
-        margin-bottom: 9vw;
     }
 
     .backgorund-img img{
@@ -206,6 +581,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+
     .video{
         padding-top: 0;
     }
@@ -218,10 +594,27 @@
         height: 120vw;
     }
 
-    .content-header img{
-        width: 59vw;
+    .sample-video{
         margin-bottom: 9vw;
     }
+
+    .content-header img{
+        width: 59vw;
+    }
+
+    .content-box-slide-header h1{
+        margin-bottom: 0;
+        padding-bottom: 0.5vw;
+    }
+
+    .box-landing-img img{
+        width: 50vw;
+    }
+
+    .content-box-landing{
+        border-radius: 0;
+    }
+
 }
 
 /* animation */
@@ -231,13 +624,55 @@
     opacity: 0;
 }
 
-.animetion-fade-out{
+.animation-fade-out{
     opacity: 0;
 }
 
-.animetion-fade-in{
+.animation-fade-in{
     opacity: 1;
 }
+
+.animation-slide-x-out{
+    animation: animation-slide-x-out .5s;
+}
+
+.animation-slide-x-in{
+    animation: animation-slide-x-in .5s;
+}
+
+@keyframes animation-slide-x-out{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes animation-slide-x-in{
+    from{
+        transform: translateX(100vw);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes arrow {
+    0%{
+        margin: 1vw 0;
+    }
+    25% {
+        margin: 1.25vw 0;
+    }
+    75% {
+        margin: 0.9vw 0;
+    }
+    100%{
+        margin: 1vw 0;
+    }
+}
+
 
 /* font */
 @font-face {
