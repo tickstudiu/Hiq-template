@@ -34,6 +34,73 @@
 .hidden{
     display: none;
 }
+
+.text-white{
+    color: white;
+}
+
+.p-3{
+    padding: 1.5rem;
+}
+
+.mt-1{
+    margin-top: 0.5rem;
+}
+
+.mt-3{
+    margin-top: 1.5rem;
+}
+
+.mb-1{
+    margin-bottom: 0.5rem;
+}
+
+.mb-2{
+    margin-bottom: 1rem;
+}
+
+.mb-3{
+    margin-bottom: 1.5rem;
+}
+
+.rounded {
+    border-radius: 0.25rem !important;
+}
+
+.rounded-top {
+    border-top-left-radius: 0.75rem !important;
+    border-top-right-radius: 0.75rem !important;
+}
+
+.rounded-right {
+    border-top-right-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+}
+
+.rounded-bottom {
+    border-bottom-right-radius: 0.75rem !important;
+    border-bottom-left-radius: 0.75rem !important;
+}
+
+.rounded-left {
+    border-top-left-radius: 0.75rem !important;
+    border-bottom-left-radius: 0.75rem !important;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.rounded-0 {
+    border-radius: 0 !important;
+}
+
+.lead{
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 500;
+}
 /***********************
     class background
 ************************/
@@ -45,6 +112,11 @@
     z-index: -1;
 }
 
+
+.bg-hiq{
+    background-image: -webkit-linear-gradient(0deg, #9b6d02, #d0b923 75%);
+    background-image: linear-gradient(90deg, #9b6d02, #d0b923 75%);
+}
 
 /********************
     class video
@@ -67,6 +139,17 @@
 /***************************
     class content-box
 ****************************/
+
+.content-btn{
+    background: none;
+    color: darkblue;
+    font-family: 'Db helvethaica x med cond v3', sans-serif;
+    font-size: 35px;
+    line-height: 35px;
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    padding: 0.1vw 2vw;
+}
 
 .content-box:nth-child(odd){
     margin: 5vh 0;
@@ -416,7 +499,13 @@
         margin-bottom: 2.2vw;
     }
 
+    .lead{
+        font-size: 4.25vw;
+        line-height: 4.25vw;
+    }
+
     .carousel-inner,
+    .content-btn,
     .content-box-slide-btn-over-img input[type="submit"],
     .content-box-slide-header h1,
     .content-box-slide-body p,
